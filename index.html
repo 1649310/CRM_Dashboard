@@ -16,176 +16,182 @@
 <body>
     <!-- sidebar -->
     <aside class="sidebar">
-        <a class="sidebar__logo-link" href="index.html">
-            <img class="sidebar__logo_img" src="images/logo.png">
-        </a>
+        <div class="sidebar__logo">
+            <a class="sidebar__logo-link" href="index.html">
+                <img class="sidebar__logo-img" src="images/logo.png">
+            </a>
+        </div>
         <nav class="sidebar__nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <img class="nav__img" src="images/icon_dashboard.png">
-                        <p class="nav__menu">Dashboard</p>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__img" src="images/icon_dashboard.png">
+                        <p class="sidebar__menu">Dashboard</p>
                     </a>
                 </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <img class="nav__img" src="images/icon_product.png">
-                        <p class="nav__menu">Product</p>
-                        <img class="nav__arrow" src="images/arrow.png">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__img" src="images/icon_product.png">
+                        <p class="sidebar__menu">Product</p>
+                        <img class="sidebar__arrow" src="images/arrow.png">
                     </a>
                 </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <img class="nav__img" src="images/icon_customers.png">
-                        <p class="nav__menu">Customers</p>
-                        <img class="nav__arrow" src="images/arrow.png">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link sidebar__link_active">
+                        <img class="sidebar__img" src="images/icon_customers.png">
+                        <p class="sidebar__menu">Customers</p>
+                        <img class="sidebar__arrow" src="images/arrow-active.png">
                     </a>
                 </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <img class="nav__img" src="images/icon_income.png">
-                        <p class="nav__menu">Income</p>
-                        <img class="nav__arrow" src="images/arrow.png">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__img" src="images/icon_income.png">
+                        <p class="sidebar__menu">Income</p>
+                        <img class="sidebar__arrow" src="images/arrow.png">
                     </a>
                 </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <img class="nav__img" src="images/icon_promote.png">
-                        <p class="nav__menu">Income</p>
-                        <img class="nav__arrow" src="images/arrow.png">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__img" src="images/icon_promote.png">
+                        <p class="sidebar__menu">Income</p>
+                        <img class="sidebar__arrow" src="images/arrow.png">
                     </a>
                 </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">
-                        <img class="nav__img" src="images/icon_help.png">
-                        <p class="nav__menu">Help</p>
-                        <img class="nav__arrow" src="images/arrow.png">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__img" src="images/icon_help.png">
+                        <p class="sidebar__menu">Help</p>
+                        <img class="sidebar__arrow" src="images/arrow.png">
                     </a>
                 </li>
             </ul>
         </nav>
         <div class="sidebar__user">
-            <img class="user_foto" src="images/user.png">
-            <div class="user_desc">
-                <h2 class="user_name">Evano</h2>
-                <p class="user_job">Project Manager</p>
+            <img class="sidebar__foto" src="images/user.png">
+            <div class="sidebar__desc">
+                <h2 class="sidebar__name">Evano</h2>
+                <p class="sidebar__job">Project Manager</p>
             </div>
         </div>
     </aside>
 
     <!-- page-content  -->
     <main class="content">
-        <div class="content__container container">
-            <h1 class="content__container__title">Hello Evano 👋🏼,</h1>
-            <div class="content__container__table">
-                <div class="content__container__table_caption">
-                    <h2 class="content__container__table_title">All customers</h2>
-                    <p class="content__container__table_desc">Active members</p>
-                    <input class="content__container__table_search-form">
+        <div class="container">
+            <h1 class="content__title">Hello Evano 👋🏼,</h1>
+            <div class="content__table">
+                <div class="content__head">
+                    <div class="content__caption">
+                        <h2 class="content__table-title">All customers</h2>
+                        <p class="content__table-desc">Active members</p>
+                    </div>
+                    <input class="search-form">
                 </div>
-                <table class="content__container__table_content">
-                    <td class="content__container__table_title">Customer name</td>
-                    <td class="content__container__table_title">Company</td>
-                    <td class="content__container__table_title">Phone Number</td>
-                    <td class="content__container__table_title">Email</td>
-                    <td class="content__container__table_title">Country</td>
-                    <td class="content__container__table_title">Status</td>
-                    <tr class="content__container__table_colum">
-                        <td class="content__container__table_row">Jane Cooper</td>
-                        <td class="content__container__table_row">Microsoft</td>
-                        <td class="content__container__table_row">(225) 555-0118</td>
-                        <td class="content__container__table_row">jane@microsoft.com</td>
-                        <td class="content__container__table_row">United States</td>
-                        <td class="content__container__table_row">
-                            <a href="#" class="content__container__table_row_link">Active</a>
+                <table class="table">
+                    <tr class="table__colum">
+                        <th class="table__title">Customer name</td>
+                        <th class="table__title">Company</td>
+                        <th class="table__title">Phone Number</td>
+                        <th class="table__title">Email</td>
+                        <th class="table__title">Country</td>
+                        <th class="table__title">Status</td>
+                    </tr>
+                    <tr class="table__colum">
+                        <td class="table__row">Jane Cooper</td>
+                        <td class="table__row">Microsoft</td>
+                        <td class="table__row">(225) 555-0118</td>
+                        <td class="table__row">jane@microsoft.com</td>
+                        <td class="table__row">United States</td>
+                        <td class="table__row">
+                            <a href="#" class="table__link">Active</a>
                         </td>
                     </tr>
-                    <tr class="content__container__table_colum">
-                        <td class="content__container__table_row">Floyd Miles</td>
-                        <td class="content__container__table_row">Yahoo</td>
-                        <td class="content__container__table_row">(205) 555-0100</td>
-                        <td class="content__container__table_row">floyd@yahoo.com</td>
-                        <td class="content__container__table_row">Kiribati</td>
-                        <td class="content__container__table_row">
-                            <a href="#" class="content__container__table_row_link">Inactive</a>
+                    <tr class="table__colum">
+                        <td class="table__row">Floyd Miles</td>
+                        <td class="table__row">Yahoo</td>
+                        <td class="table__row">(205) 555-0100</td>
+                        <td class="table__row">floyd@yahoo.com</td>
+                        <td class="table__row">Kiribati</td>
+                        <td class="table__row">
+                            <a href="#" class="table__link">Inactive</a>
                         </td>
                     </tr>
-                    <tr class="content__container__table_colum">
-                        <td class="content__container__table_row">Ronald Richards</td>
-                        <td class="content__container__table_row">Adobe</td>
-                        <td class="content__container__table_row">(302) 555-0107</td>
-                        <td class="content__container__table_row">ronald@adobe.com</td>
-                        <td class="content__container__table_row">Israel</td>
-                        <td class="content__container__table_row">
-                            <a href="#" class="content__container__table_row_link">Inactive</a>
+                    <tr class="table__colum">
+                        <td class="table__row">Ronald Richards</td>
+                        <td class="table__row">Adobe</td>
+                        <td class="table__row">(302) 555-0107</td>
+                        <td class="table__row">ronald@adobe.com</td>
+                        <td class="table__row">Israel</td>
+                        <td class="table__row">
+                            <a href="#" class="table__link">Inactive</a>
                         </td>
                     </tr>
-                    <tr class="content__container__table_colum">
-                        <td class="content__container__table_row">Marvin McKinney</td>
-                        <td class="content__container__table_row">Tesla</td>
-                        <td class="content__container__table_row">(252) 555-0126</td>
-                        <td class="content__container__table_row">marvin@tesla.com</td>
-                        <td class="content__container__table_row">Iran</td>
-                        <td class="content__container__table_row">
-                            <a href="#" class="content__container__table_row_link">Active</a>
+                    <tr class="table__colum">
+                        <td class="table__row">Marvin McKinney</td>
+                        <td class="table__row">Tesla</td>
+                        <td class="table__row">(252) 555-0126</td>
+                        <td class="table__row">marvin@tesla.com</td>
+                        <td class="table__row">Iran</td>
+                        <td class="table__row">
+                            <a href="#" class="table__link">Active</a>
                         </td>
                     </tr>
-                    <tr class="content__container__table_colum">
-                        <td class="content__container__table_row">Jerome Bell</td>
-                        <td class="content__container__table_row">Google</td>
-                        <td class="content__container__table_row">(629) 555-0129</td>
-                        <td class="content__container__table_row">jerome@google.com</td>
-                        <td class="content__container__table_row">Réunion</td>
-                        <td class="content__container__table_row">
-                            <a href="#" class="content__container__table_row_link">Active</a>
+                    <tr class="table__colum">
+                        <td class="table__row">Jerome Bell</td>
+                        <td class="table__row">Google</td>
+                        <td class="table__row">(629) 555-0129</td>
+                        <td class="table__row">jerome@google.com</td>
+                        <td class="table__row">Réunion</td>
+                        <td class="table__row">
+                            <a href="#" class="table__link">Active</a>
                         </td>
                     </tr>
-                    <tr class="content__container__table_colum">
-                        <td class="content__container__table_row">Kathryn Murphy</td>
-                        <td class="content__container__table_row">Microsoft</td>
-                        <td class="content__container__table_row">(406) 555-0120</td>
-                        <td class="content__container__table_row">kathryn@microsoft.com</td>
-                        <td class="content__container__table_row">Curaçao</td>
-                        <td class="content__container__table_row">
-                            <a href="#" class="content__container__table_row_link">Active</a>
+                    <tr class="table__colum">
+                        <td class="table__row">Kathryn Murphy</td>
+                        <td class="table__row">Microsoft</td>
+                        <td class="table__row">(406) 555-0120</td>
+                        <td class="table__row">kathryn@microsoft.com</td>
+                        <td class="table__row">Curaçao</td>
+                        <td class="table__row">
+                            <a href="#" class="table__link">Active</a>
                         </td>
                     </tr>
-                    <tr class="content__container__table_colum">
-                        <td class="content__container__table_row">Jacob Jones</td>
-                        <td class="content__container__table_row">Yahoo</td>
-                        <td class="content__container__table_row">(208) 555-0112</td>
-                        <td class="content__container__table_row">jacob@yahoo.com</td>
-                        <td class="content__container__table_row">Brazil</td>
-                        <td class="content__container__table_row">
-                            <a href="#" class="content__container__table_row_link">Active</a>
+                    <tr class="table__colum">
+                        <td class="table__row">Jacob Jones</td>
+                        <td class="table__row">Yahoo</td>
+                        <td class="table__row">(208) 555-0112</td>
+                        <td class="table__row">jacob@yahoo.com</td>
+                        <td class="table__row">Brazil</td>
+                        <td class="table__row">
+                            <a href="#" class="table__link">Active</a>
                         </td>
                     </tr>
-                    <tr class="content__container__table_colum">
-                        <td class="content__container__table_row">Kristin Watson</td>
-                        <td class="content__container__table_row">Facebook</td>
-                        <td class="content__container__table_row">(704) 555-0127</td>
-                        <td class="content__container__table_row">kristin@facebook.com</td>
-                        <td class="content__container__table_row">Åland Islands</td>
-                        <td class="content__container__table_row">
-                            <a href="#" class="content__container__table_row_link">Inactive</a>
+                    <tr class="table__colum">
+                        <td class="table__row">Kristin Watson</td>
+                        <td class="table__row">Facebook</td>
+                        <td class="table__row">(704) 555-0127</td>
+                        <td class="table__row">kristin@facebook.com</td>
+                        <td class="table__row">Åland Islands</td>
+                        <td class="table__row">
+                            <a href="#" class="table__link">Inactive</a>
                         </td>
                     </tr>
                 </table>
-                <div class="content__container__table_">
-                    <p class="content__container__table_text">Showing data 1 to 8 of 256K entries</p>
-                    <div class="content__container__table_nagitation">
-                        <ul class="content__container__table_list">
-                            <li class="content__container__table_item">
-                                <img class="content__container__table_item_img" src="images/arrow_left.png">
+                <div class="content__bottom">
+                    <p class="content__text">Showing data 1 to 8 of 256K entries</p>
+                    <div class="nagination">
+                        <ul class="nagination__list">
+                            <li class="nagination__item">
+                                <img class="nagination__img" src="images/arrow_left.png">
                             </li>
-                            <li class="content__container__table_item">1</li>
-                            <li class="content__container__table_item">2</li>
-                            <li class="content__container__table_item">3</li>
-                            <li class="content__container__table_item">4</li>
-                            <li class="content__container__table_item">...</li>
-                            <li class="content__container__table_item">40</li>
-                            <li class="content__container__table_item">
-                                <img class="content__container__table_item_img" src="images/arrow_right.png">
+                            <li class="nagination__item nagination__item_active">1</li>
+                            <li class="nagination__item">2</li>
+                            <li class="nagination__item">3</li>
+                            <li class="nagination__item">4</li>
+                            <li class="nagination__item">...</li>
+                            <li class="nagination__item">40</li>
+                            <li class="nagination__item">
+                                <img class="nagination__img" src="images/arrow_right.png">
                             </li>
                             </li>
                         </ul>
@@ -193,9 +199,8 @@
                 </div>
             </div>
         </div>
-      
-    </main>
 
+    </main>
 </body>
 
 </html>
