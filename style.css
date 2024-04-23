@@ -3,27 +3,8 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 14px;
-    margin: 0;
-    padding: 0;
     background: #fafbff;
     letter-spacing: -0.01em;
-}
-
-h1,
-h2,
-h3,
-p,
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
 }
 
 .container {
@@ -31,41 +12,53 @@ a {
 }
 
 .sidebar {
-    padding: 36px 26px 77px;
+    padding: 36px 28px 77px;
     background-color: #fff;
 }
+
 .sidebar__logo {
     margin-bottom: 53px;
 }
+
+.sidebar__item {
+    width: 250px;
+}
+
 .sidebar__link {
     display: flex;
     align-items: center;
     padding: 11px 8px 11px 11px;
     margin-bottom: 18px;
     color: #9197b3;
-    width: 250px;
+
 }
+
 .sidebar__img {
     padding-right: 14px;
 }
+
 .sidebar__link_active {
     background: #5932ea;
     border-radius: 8px;
     color: #fff;
 }
+
 .sidebar__user {
     display: flex;
 }
+
 .sidebar__foto {
     padding-right: 12px;
     width: 42px;
     height: 42px;
 }
+
 .sidebar__job {
     font-weight: 400;
-font-size: 12px;
-color: #757575;
+    font-size: 12px;
+    color: #757575;
 }
+
 .content {
     padding-top: 41px;
     padding-left: 75px;
@@ -101,37 +94,70 @@ color: #757575;
     letter-spacing: -0.01em;
     color: #16c098;
 }
+
 .table__title {
-    margin-bottom: 14px;
+    padding-bottom: 14px;
     border-bottom: 1px solid #eee;
-color: #b5b7c0;
+    color: #b5b7c0;
+
 }
-.table__colum {
-    display: flex;
-    justify-content: space-between;
+
+.table {
+    width: 100%;
+    text-align: left;
 }
+
+.table__row {
+    color: #292d32;
+    padding: 24px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.table__link {
+    display: inline;
+    border-radius: 4px;
+    padding: 4px 12px;
+    width: 84px;
+}
+
+.table__link_active {
+    background: rgba(22, 192, 152, 0.38);
+    border: 1px solid #00b087;
+    color: #008767;
+}
+
+.table__link_inactive {
+    background: #ffc5c5;
+    color: #df0404;
+    border: 1px solid #df0404;
+}
+
 .content__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .content__text {
     color: #b5b7c0;
 }
+
 .nagination__list {
     display: flex;
     align-items: center;
     gap: 12px;
 }
+
 .nagination__item {
     border: 1px solid #eee;
-border-radius: 4px;
-padding: 6px 9px;
-background: #f5f5f5;
-color: #404b52;
-font-size: 12px;
-line-height: 100%;
+    border-radius: 4px;
+    padding: 6px 9px;
+    background: #f5f5f5;
+    color: #404b52;
+    font-size: 12px;
+    line-height: 100%;
 }
+
 .nagination__item_active {
     background: #5932ea;
     color: #fff;
