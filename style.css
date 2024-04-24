@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+} 
 body {
     display: flex;
     font-family: "Poppins", sans-serif;
@@ -5,6 +8,7 @@ body {
     font-size: 14px;
     background: #fafbff;
     letter-spacing: -0.01em;
+    line-height: 1.4;
 }
 
 .container {
@@ -12,6 +16,9 @@ body {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 36px 28px 77px;
     background-color: #fff;
 }
@@ -27,12 +34,17 @@ body {
 .sidebar__link {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
     padding: 11px 8px 11px 11px;
     margin-bottom: 18px;
     color: #9197b3;
 
 }
-
+.sidebar__link-wrap {
+    display: flex;
+    align-items: center;
+}
 .sidebar__img {
     padding-right: 14px;
 }
@@ -45,14 +57,16 @@ body {
 
 .sidebar__user {
     display: flex;
+    align-items: center;
 }
 
 .sidebar__foto {
-    padding-right: 12px;
     width: 42px;
     height: 42px;
 }
-
+.sidebar__desc {
+    padding-left: 12px;
+}
 .sidebar__job {
     font-weight: 400;
     font-size: 12px;
@@ -60,28 +74,27 @@ body {
 }
 
 .content {
-    padding-top: 41px;
-    padding-left: 75px;
-    padding-right: 95px;
+    padding: 41px 95px 258px 71px;
 }
 
 .content__title {
     font-size: 24px;
     margin-bottom: 51px;
+    line-height: 1.5;
 }
 
 .content__table {
     border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
-    padding: 30px 44px 40px 38px;
+    
 }
 
 .content__head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    padding: 30px 53px 40px 38px;
 }
 
 .content__table-title {
@@ -94,32 +107,63 @@ body {
     letter-spacing: -0.01em;
     color: #16c098;
 }
-
-.table__title {
-    padding-bottom: 14px;
-    border-bottom: 1px solid #eee;
-    color: #b5b7c0;
-
+.search {
+    position: relative;
 }
-
+.search__input {
+    display: block;
+    padding: 10px 30px 10px 40px;
+    background: #f9fbff;
+    border: 0 none;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #b5b7c0;
+    outline: none;
+    line-height: 1.5;
+}
+.search__submit {
+    background: url(images/search.png) 0 0 no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    border: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    padding: 0;
+    left: 8px;
+  
+}
 .table {
     width: 100%;
     text-align: left;
 }
+.table__title {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #eee;
+    color: #b5b7c0;
+   
+}
+.table__title_center {
+    text-align: center;
+    width: 84px;
+}
 
 .table__row {
     color: #292d32;
-    padding: 24px 0;
+    padding: 20px 0;
     border-bottom: 1px solid #eee;
 }
 
 .table__link {
-    display: inline;
     border-radius: 4px;
     padding: 4px 12px;
     width: 84px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.3;
 }
-
 .table__link_active {
     background: rgba(22, 192, 152, 0.38);
     border: 1px solid #00b087;
@@ -136,29 +180,40 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 40px 40px 38px;
 }
 
 .content__text {
     color: #b5b7c0;
 }
 
-.nagination__list {
+.pagination__list {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.nagination__item {
+.pagination__link {
     border: 1px solid #eee;
     border-radius: 4px;
-    padding: 6px 9px;
+    padding: 6px 8px;
     background: #f5f5f5;
     color: #404b52;
     font-size: 12px;
     line-height: 100%;
+    display: inline-block;
 }
 
-.nagination__item_active {
-    background: #5932ea;
+.pagination__link_active {
+    background-color: #5932ea;
     color: #fff;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.pagination__link_no-background {
+    background-color: #fff;
+    border: none;
+}
+.pagination__link_double {
+    padding: 6px 5px;
 }

@@ -17,56 +17,68 @@
 <body>
     <!-- sidebar -->
     <aside class="sidebar">
-        <div class="sidebar__logo">
-            <a class="sidebar__logo-link" href="index.html">
-                <img class="sidebar__logo-img" src="images/logo.png">
-            </a>
+        <div class="sidebar__wrap">
+            <div class="sidebar__logo">
+                <a class="sidebar__logo-link" href="index.html">
+                    <img class="sidebar__logo-img" src="images/logo.png">
+                </a>
+            </div>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <img class="sidebar__img" src="images/icon_dashboard.png">
+                            <p class="sidebar__menu">Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-wrap">
+                                <img class="sidebar__img" src="images/icon_product.png">
+                                <p class="sidebar__menu">Product</p>
+                            </div>
+                            <img class="sidebar__arrow" src="images/arrow.png">
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link sidebar__link_active">
+                            <div class="sidebar__link-wrap">
+                                <img class="sidebar__img" src="images/icon_customers.png">
+                                <p class="sidebar__menu">Customers</p>
+                            </div>
+                            <img class="sidebar__arrow" src="images/arrow-active.png">
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-wrap">
+                                <img class="sidebar__img" src="images/icon_income.png">
+                                <p class="sidebar__menu">Income</p>
+                            </div>
+                            <img class="sidebar__arrow" src="images/arrow.png">
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-wrap">
+                                <img class="sidebar__img" src="images/icon_promote.png">
+                                <p class="sidebar__menu">Income</p>
+                            </div>
+                            <img class="sidebar__arrow" src="images/arrow.png">
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-wrap">
+                                <img class="sidebar__img" src="images/icon_help.png">
+                                <p class="sidebar__menu">Help</p>
+                            </div>
+                            <img class="sidebar__arrow" src="images/arrow.png">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="sidebar__nav">
-            <ul class="sidebar__list">
-                <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
-                        <img class="sidebar__img" src="images/icon_dashboard.png">
-                        <p class="sidebar__menu">Dashboard</p>
-                    </a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
-                        <img class="sidebar__img" src="images/icon_product.png">
-                        <p class="sidebar__menu">Product</p>
-                        <img class="sidebar__arrow" src="images/arrow.png">
-                    </a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="#" class="sidebar__link sidebar__link_active">
-                        <img class="sidebar__img" src="images/icon_customers.png">
-                        <p class="sidebar__menu">Customers</p>
-                        <img class="sidebar__arrow" src="images/arrow-active.png">
-                    </a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
-                        <img class="sidebar__img" src="images/icon_income.png">
-                        <p class="sidebar__menu">Income</p>
-                        <img class="sidebar__arrow" src="images/arrow.png">
-                    </a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
-                        <img class="sidebar__img" src="images/icon_promote.png">
-                        <p class="sidebar__menu">Income</p>
-                        <img class="sidebar__arrow" src="images/arrow.png">
-                    </a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
-                        <img class="sidebar__img" src="images/icon_help.png">
-                        <p class="sidebar__menu">Help</p>
-                        <img class="sidebar__arrow" src="images/arrow.png">
-                    </a>
-                </li>
-            </ul>
-        </nav>
         <div class="sidebar__user">
             <img class="sidebar__foto" src="images/user.png">
             <div class="sidebar__desc">
@@ -86,7 +98,14 @@
                         <h2 class="content__table-title">All customers</h2>
                         <p class="content__table-desc">Active members</p>
                     </div>
-                    <input class="search-form">
+                    <div class="content__search">
+                        <div class="search">
+                            <form action="#" class="search__form">
+                                <input type="text" placeholder="Search" class="search__input">
+                                <input type="submit" value="" class="search__submit">
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <table class="table">
                     <tr class="table__colum">
@@ -95,7 +114,7 @@
                         <th class="table__title">Phone Number</td>
                         <th class="table__title">Email</td>
                         <th class="table__title">Country</td>
-                        <th class="table__title">Status</td>
+                        <th class="table__title table__title_center">Status</td>
                     </tr>
                     <tr class="table__colum">
                         <td class="table__row">Jane Cooper</td>
@@ -180,19 +199,23 @@
                 </table>
                 <div class="content__bottom">
                     <p class="content__text">Showing data 1 to 8 of 256K entries</p>
-                    <div class="nagination">
-                        <ul class="nagination__list">
-                            <li class="nagination__item">
-                                <img class="nagination__img" src="images/arrow_left.png">
+                    <div class="pagination">
+                        <ul class="pagination__list">
+                            <li class="pagination__item"><a href="#" class="pagination__link"><img
+                                        class="pagination__img" src="images/arrow_left.png"></a>
                             </li>
-                            <li class="nagination__item nagination__item_active">1</li>
-                            <li class="nagination__item">2</li>
-                            <li class="nagination__item">3</li>
-                            <li class="nagination__item">4</li>
-                            <li class="nagination__item">...</li>
-                            <li class="nagination__item">40</li>
-                            <li class="nagination__item">
-                                <img class="nagination__img" src="images/arrow_right.png">
+                            <li class="pagination__item ">
+                                <a href="#" class="pagination__link pagination__link_active">1</a>
+                            </li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                            <li class="pagination__item"><a href="#"
+                                    class="pagination__link pagination__link_no-background">...</a></li>
+                            <li class="pagination__item"><a href="#"
+                                    class="pagination__link pagination__link_double">40</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link"><img
+                                        class="pagination__img" src="images/arrow_right.png"></a>
                             </li>
                             </li>
                         </ul>
