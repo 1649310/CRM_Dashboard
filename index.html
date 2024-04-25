@@ -22,13 +22,16 @@
                 <a class="sidebar__logo-link" href="index.html">
                     <img class="sidebar__logo-img" src="images/logo.png">
                 </a>
+                <p class="sidebar__version">v.01</p>
             </div>
             <nav class="sidebar__nav">
                 <ul class="sidebar__list">
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-wrap">
                             <img class="sidebar__img" src="images/icon_dashboard.png">
                             <p class="sidebar__menu">Dashboard</p>
+                            </div>
                         </a>
                     </li>
                     <li class="sidebar__item">
@@ -108,6 +111,7 @@
                     </div>
                 </div>
                 <table class="table">
+                    <thead class="table__head">
                     <tr class="table__colum">
                         <th class="table__title">Customer name</td>
                         <th class="table__title">Company</td>
@@ -116,6 +120,8 @@
                         <th class="table__title">Country</td>
                         <th class="table__title table__title_center">Status</td>
                     </tr>
+                   </thead>
+                   <thbody class="table__body">
                     <tr class="table__colum">
                         <td class="table__row">Jane Cooper</td>
                         <td class="table__row">Microsoft</td>
@@ -196,6 +202,7 @@
                             <a href="#" class="table__link table__link_inactive">Inactive</a>
                         </td>
                     </tr>
+                    </thbody>
                 </table>
                 <div class="content__bottom">
                     <p class="content__text">Showing data 1 to 8 of 256K entries</p>
