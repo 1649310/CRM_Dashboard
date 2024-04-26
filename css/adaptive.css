@@ -1,0 +1,134 @@
+@media (max-width: 1470px) {
+    .content {
+        padding: 41px 40px 258px 340px;
+    }
+}
+@media (max-width: 1370px) {
+    .content {
+        padding: 41px 15px 258px 315px;
+    }
+}
+@media (max-width: 1330px) {
+    .sidebar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .content__title {
+        margin-bottom: 30px;
+    }
+    .content__table {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 1200px) {
+    .sidebar__logo {
+        margin-bottom: 40px;
+    }
+    .sidebar__logo-img {
+        width: 150px;
+    }
+    .sidebar__item {
+        width: 225px;
+    }
+    .sidebar__link {
+        margin-bottom: 10px;
+    }
+    .content {
+        padding-left: 285px;
+        padding-top: 30px;
+    }
+    .content__head {
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 1200px) {
+    .sidebar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sidebar__logo-img {
+        width: 120px;
+    }
+    .sidebar__item {
+        width: 200px;
+    }
+    .content {
+        padding-left: 235px;
+    }
+}
+@media (max-width: 1050px) {
+    .sidebar {
+        position: relative;
+        flex-direction: row;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .sidebar__wrap {
+        display: flex;
+       
+    }
+    .sidebar__logo {
+        margin-bottom: 0px;
+        margin-right: 80px;
+    }
+    .sidebar__list {
+        display: flex;
+    }
+    .sidebar__item {
+        width: 100px;
+    }
+    .sidebar__link {
+        margin-bottom: 0;
+    }
+    .sidebar__img {
+        display: none;
+    }
+    .sidebar__arrow {
+        display: none;
+    }
+    .content {
+        padding-left: 15px;
+        padding-bottom: 100px;
+    }
+
+}
+@media (max-width: 970px) {
+    .sidebar {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    .sidebar__logo {
+        margin-right: 50px;
+    }
+    .sidebar__foto {
+        display: none;
+    }
+    .content {
+        padding-left: 15px;
+        padding-bottom: 70px;
+    }
+    .content__title {
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 900px) { 
+    .sidebar__logo {
+        margin-right: 30px;
+    }
+    .sidebar__logo-img {
+        width: 100px;
+    }
+    .sidebar__version {
+        display: none;
+    }
+    .sidebar__item {
+        width: 90px;
+    }
+}
+
+@media (max-width: 800px) { 
+
+}  
