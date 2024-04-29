@@ -82,6 +82,9 @@
                     </li>
                 </ul>
             </nav>
+            <div class="sidebar__burger">
+                <span></span>
+            </div>
         </div>
         <div class="sidebar__user">
             <img class="sidebar__foto" src="images/user.png">
@@ -122,7 +125,7 @@
                         <th class="table__title table__title_center">Status</td>
                     </tr>
                    </thead>
-                   <thbody class="table__body">
+                   <tbody class="table__body">
                     <tr class="table__colum">
                         <td class="table__row">Jane Cooper</td>
                         <td class="table__row">Microsoft</td>
@@ -203,7 +206,7 @@
                             <a href="#" class="table__link table__link_inactive">Inactive</a>
                         </td>
                     </tr>
-                    </thbody>
+                    </tbody>
                 </table>
                 <div class="content__bottom">
                     <p class="content__text">Showing data 1 to 8 of 256K entries</p>
@@ -233,6 +236,12 @@
         </div>
 
     </main>
+    <script>
+        document.querySelector('.sidebar__burger').addEventListener('click', function(){
+            this.classList.toggle('active');
+            document.querySelector('.sidebar__list').classList.toggle('open');
+        })
+    </script>
 </body>
 
 </html>

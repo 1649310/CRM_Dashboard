@@ -64,6 +64,9 @@ body {
     border-radius: 8px;
     color: #fff;
 }
+.sidebar__burger {
+    display: none;
+}
 
 .sidebar__user {
     display: flex;
